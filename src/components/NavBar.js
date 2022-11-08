@@ -1,7 +1,13 @@
-import React from 'react'
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
-export default function NavBar() {
+ function NavBar() {
   return (
-    <div>NavBar</div>
-  )
+    <div>
+      <Button variant="contained">Hello World</Button>
+      <h2>yhhbvhvbh</h2>
+    </div>
+  );
 }
+
+export default NavBar;
