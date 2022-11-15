@@ -1,11 +1,35 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
+import photo from '../photo.JPG'
+import {Toolbar, Typography} from '@mui/material';
+// import {makeStyles} from '@material-ui/core/styles';
+
 
  function NavBar() {
   return (
-    <div>
-      <Button variant="contained">Hello World</Button>
-      <h2>yhhbvhvbh</h2>
+    <div className=" flex  flex-row gap-x-8">
+      
+
+      
+      <img  className=" w-24 rounded-full" src={photo} alt="myphoto" />
+      
+      
+    
+  <div className="flex flex-col gap-y-6 ">
+      <div >
+            <h1 className="text-2xl font-bold after:content-['']">Nurudeen Olalemi</h1>
+        </div>
+        <div >
+          <ul className="flex flex-row gap-x-4 text-sm text-blue-800 hover:text-red-50">
+            <li>PROJECTS</li>
+            <li>RESUME</li>
+            <li>CONTACT</li>
+          </ul>
+    </div>
+
+  </div>
+    
+
+
     </div>
   );
 }
