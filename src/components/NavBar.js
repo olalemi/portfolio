@@ -1,7 +1,9 @@
 import * as React from 'react';
+import { Document, Page } from 'react-pdf';
+import Resume from '../Resume.pdf';
 import photo from '../photo.JPG'
-import {Toolbar, Typography} from '@mui/material';
-// import {makeStyles} from '@material-ui/core/styles';
+// import {Toolbar, Typography} from '@mui/material';
+import {Link} from 'react-scroll';
 
 
  function NavBar() {
@@ -10,20 +12,24 @@ import {Toolbar, Typography} from '@mui/material';
       
 
       
-      <img  className=" w-24 rounded-md" src={photo} alt="myphoto" />
+      <img  className=" w-24 rounded-full " src={photo} alt="myphoto" />
       
       
     
-  <div className="flex flex-col gap-y-6 sm:mt-5 ">
+  <div className="flex flex-col gap-y-6 sm:mt-4">
        <div >
-            <h1 className="text-2xl font-bold after:content-['']">Nurudeen Olalemi</h1>
+            <h1 className="text-2xl font-bold ">Nurudeen Olalemi</h1>
         </div>
         <div >
-          <ul className="flex flex-row flex-wrap gap-x-4 text-sm text-blue-800 hover:text-red-50">
-            <li>PROJECTS</li>
-            <li>RESUME</li>
-            <li>CONTACT</li>
-          </ul>
+                          
+                        
+      <ul className="flex flex-row flex-wrap sm:text-sm md:text-xl text-grey-50 hover:text-blue-800 font-bold gap-x-6 sm:mt-1">
+
+     
+
+      </ul>
+           
+         
     </div>
 
   </div>
