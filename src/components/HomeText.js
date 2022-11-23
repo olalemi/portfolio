@@ -13,7 +13,7 @@ function HomeText() {
 
        
        
-       <p className=" mt-9 sm:text-sm md:text-xl lg:text-2xl"> I write HTML & CSS | Javascript | Typescript | React.Js | Python</p>
+       <p className=" mt-9 sm:text-sm md:text-xl lg:text-2xl"> I write HTML & CSS | Javascript | Typescript | React.Js | Node.Js</p>
 
      </div>
       

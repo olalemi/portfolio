@@ -29,7 +29,7 @@ import {Link} from 'react-scroll';
           
 
             <ul className="flex flex-row flex-wrap hover: font-bold cursor-pointer gap-x-6  lg:text-2xl">
-            <li className="hover:text-yellow-900"><Link to='project' spy={true} smooth={true}  offset={700} duration={500}>PROJECT</Link></li>
+            <li className="hover:text-yellow-900"><Link to='project' spy={true} smooth={true}  offset={-50} duration={500}>PROJECT</Link></li>
             <li className="hover:text-yellow-900"><a href={Resume} without rel="noopener noreferrer" target="_blank">RESUME</a></li>
             <li className="hover:text-yellow-900"><Link to='contact' spy={true} smooth={true}  offset={70} duration={500}>CONTACT</Link></li>
             

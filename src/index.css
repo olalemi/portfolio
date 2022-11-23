@@ -16,3 +16,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Rubik', sans-serif;
 }
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+ 
+
+} 
+
+input[type="text"], input[type="email"] , textarea{
+  border:rgb(59 130 246 / 0.5) solid 1.5px;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="submit"]{
+  border:rgb(59 130 246 / 0.5) solid 1.5px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  width:30%;
+  height: 45px;
+  font-weight: bold;
+  color:white;
+  background: rgb(76, 92, 181);
+  cursor: pointer;
+  
+ 
+}
+
+

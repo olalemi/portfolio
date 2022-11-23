@@ -4,7 +4,8 @@ import './App.css';
 import HomeText from './components/HomeText';
 import Section from './components/Section.js';
 import Contact from './components/Contact';
-import {tipcalc,googleapi} from "src/images";
+import tipcalc from "./images/tipcalc.jpg";
+import googleapi from "./images/googleapi.jpg";
 
 
 
@@ -17,10 +18,16 @@ function App() {
       <HomeText  />
       </div>
       <div className="sm:mt-8 lg:mt-16"  >
+      <h1 className=" mt-1 text-xl lg:text-2xl font-bold  text-yellow-900  " id="project"> PROJECTS</h1>
+     <div>
+     <Section Image={googleapi} title="Google API Bookstore"/>
+      <Section Image={tipcalc}  title="Tip Calculator App"/>
+     
+     </div>
+      
+      
 
-      <Section Image={tipcalc} title="my test"/>
-
-      <Section Image={googleapi} title="my test 2"/>
+      
 
       </div>
 
