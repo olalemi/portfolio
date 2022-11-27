@@ -1,19 +1,24 @@
-import React from "react";
-import Section from "./components/Section.js";
-import sectionList from "./components/SectionList.js";  
+import React from 'react';
+import Section from './Section';
+import sectionList from './SectionList';
 
-const Project = (props) => {
-  const projectComponent = sectionList.map((item, i) => {
-    return (
-      <Section
-        projectName={sectionList[i].projectName}
-        techUsed={sectionList[i].description}
-        Image={sectionList[i].projectImage}
-      />
-    );
-  });
-
-  return <div>{projectComponent}</div>;
+const Project = () => {
+  return (
+    <div>
+      <div>
+        {sectionList.map((sl, i) => (
+          <div key={i}>
+            <Section
+              projectName={sl.projectName}
+              description={sl.description}
+              image={sl.projectImage}
+              techUsed={sl.techUsed}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Project;

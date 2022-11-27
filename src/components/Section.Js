@@ -1,57 +1,62 @@
-import React from "react";
+import React from 'react';
 // import Button from "@mui/material/Button";
-import {OpenInNew, GitHub}from '@mui/icons-material';
-import sectionList from "./components/SectionList.js"; 
- 
+import { OpenInNew, GitHub } from '@mui/icons-material';
+import sectionList from './SectionList';
 
-
-
-
-
-
-const Section = (props) => {
-
-
-  const buttonUsed = sectionList.map((item, i) => {
-    return (sectionList[i].techUsed)});
-  
-
-
-  const title = props.title;
-  const Image = props.Image;
-  const Description = props.description;
-
-
+const Section = ({ title, image, description, techUsed }) => {
   return (
-    <div >
-     
-   
-
+    <div>
       <div className=" sm:mt-2 md:mt-8 flex  justify-around flex-col   md:flex-row gap-x-8 text-sm text-blue-800">
         <div>
-        <img className=" mt-6 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-300  border-solid border-2 border-blue-400  shadow-lg shadow-blue-500/50  md:w-full rounded-md" src={Image} alt="myphotoo" />
-
+          <img
+            className=" mt-6 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-300  border-solid border-2 border-blue-400  shadow-lg shadow-blue-500/50  md:w-full rounded-md"
+            src={image}
+            alt="myphotoo"
+          />
         </div>
-        
-          <div className=" mt-6 rounded-md p-4 border-solid border-2 border-blue-400 bg-gray-100 shadow-lg shadow-blue-500/50 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105    w-rounded-md">
-            <h1 className="flex gap-x-2 mt-6 font-bold text-xl">{ title }</h1>
 
-               
-            <h3 className="flex gap-x-2 mt-6 text-justify">{Description}</h3>
+        <div className=" mt-6 rounded-md p-4 border-solid border-2 border-blue-400 bg-gray-100 shadow-lg shadow-blue-500/50 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105    w-rounded-md">
+          <h1 className="flex gap-x-2 mt-6 font-bold text-xl">{title}</h1>
 
-               <div className="flex flex-row  justify-center flex-wrap gap-x-2 mt-6" >
-               <OpenInNew className="cursor-pointer transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105"  fontSize="medium"  onClick={event =>  window.open('https://fonts.googleapis.com/icon?family=Material+Icons')} color="primary" />
-              <GitHub className="cursor-pointer transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105" fontSize="medium" onClick={event =>  window.open('https://fonts.googleapis.com/icon?family=Material+Icons')} color="primary" />
-               </div>
-          
+          <h3 className="flex gap-x-2 mt-6 text-justify">{description}</h3>
 
-              <div className="flex flex-row flex-wrap gap-x-2 mt-6 justify-center " >
-              <button className="gap-x-2 mt-6 border-solid border-2 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105 bg-blue-800 text-white p-2 rounded-md" type="button ">{buttonUsed}</button>
-              </div>
-          
-             
-            
+          <div className="flex flex-row justify-center flex-wrap gap-x-2 mt-6">
+            <OpenInNew
+              className="cursor-pointer transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105"
+              fontSize="medium"
+              onClick={(event) =>
+                window.open(
+                  'https://fonts.googleapis.com/icon?family=Material+Icons'
+                )
+              }
+              color="primary"
+            />
+            <GitHub
+              className="cursor-pointer transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105"
+              fontSize="medium"
+              onClick={(event) =>
+                window.open(
+                  'https://fonts.googleapis.com/icon?family=Material+Icons'
+                )
+              }
+              color="primary"
+            />
           </div>
+
+          <div className="flex flex-row flex-wrap gap-x-2 mt-6 justify-center ">
+            {techUsed.map((sltu, i) => (
+              <div>
+                <button
+                  key={i}
+                  className="gap-x-2 mt-6 border-solid border-2 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105 bg-blue-800 text-white p-2 rounded-md"
+                  type="button "
+                >
+                  {sltu}
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
