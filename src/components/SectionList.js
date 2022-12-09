@@ -48,6 +48,7 @@ const sectionList = [
     ],
     projectImage: require('../images/tipcalc.jpg')
   }
+
 ];
 
 export default sectionList;
