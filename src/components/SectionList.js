@@ -54,7 +54,7 @@ const sectionList = [
     id: 2,
     projectName: 'Tip calculator App ',
     description:
-      'A simple frontend app that calculates the Tip amount  of a user after a meal. It takes i the value of the bill, Number of people amd Tip percentage and returns the Total Bill and Tip amount',
+      'A simple frontend app that calculates the Tip amount  of a user after a meal. It takes the value of the bill, Number of people amd Tip percentage and returns the Total Bill and Tip amount',
     techUsed: [
       
       'Vanilla JS',
