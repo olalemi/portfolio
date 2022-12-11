@@ -13,7 +13,7 @@ function Contact() {
         <form data-netlify="true" className="  justify-center  sm:mt-8 lg:mt-16 ">
           <h1 className=" mt-1 text-xl lg:text-2xl ">
             If you’d like to chat about a project or just have question, please
-            fill in the form below. I aim to get back within 2 days.
+            fill in the form below. I aim to get back within 24hrs.
           </h1>
           <label for="lname"></label>
           <br />
