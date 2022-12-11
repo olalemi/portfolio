@@ -6,7 +6,7 @@ import sectionList from './SectionList';
 const Section = ({ projectName, image, description, techUsed , githubLink, urlLink}) => {
   return (
     <div>
-      <div className=" sm:mt-2 md:mt-8 flex  justify-around flex-col   md:flex-row gap-x-8 text-sm text-blue-800">
+      <div className=" sm:mt-2 md:mt-8 flex  sm:mb-8 md:mb-0 justify-around flex-col   md:flex-row gap-x-8 text-sm text-blue-800">
         <div>
           <img
             className=" min-w-lg mt-6 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-300  border-solid border-2 border-blue-400  shadow-lg shadow-blue-500/50  md:w-full rounded-md"

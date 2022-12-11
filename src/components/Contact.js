@@ -55,7 +55,7 @@ function Contact() {
             placeholder="Message"
           />
           <br />
-          {/* <input type="submit" value="Send Message" onClick={alert ("hello worl")}></input> */}
+          <input type="submit" value="Send Message" ></input>
         </form>
       </div>
     </div>
