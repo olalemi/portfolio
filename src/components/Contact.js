@@ -10,7 +10,7 @@ function Contact() {
         GET IN TOUCH
       </h1>
       <div>
-        <form className="  justify-center  sm:mt-8 lg:mt-16 ">
+        <form data-netlify="true" className="  justify-center  sm:mt-8 lg:mt-16 ">
           <h1 className=" mt-1 text-xl lg:text-2xl ">
             If you’d like to chat about a project or just have question, please
             fill in the form below. I aim to get back within 2 days.
@@ -55,7 +55,7 @@ function Contact() {
             placeholder="Message"
           />
           <br />
-          <input type="submit" value="Send Message"></input>
+          {/* <input type="submit" value="Send Message" onClick={alert ("hello worl")}></input> */}
         </form>
       </div>
     </div>

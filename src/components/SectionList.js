@@ -1,54 +1,78 @@
+import { click } from '@testing-library/user-event/dist/click';
+
 const sectionList = [
   {
     id: 0,
     projectName: 'Goggle Bookstore API',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
+      'A Front End task required to build  a smile listing page for HTML 5 books using Google Books API. The approach was to attempt a mobile first design to achieve mobile and desktop design in a single style sheet. Each book in the list should display the book cover, title, subtitle, all authors, number of pages and description.',
     techUsed: [
-      'React',
-      'Typescript',
-      'Material-UI',
-      'Redux-Toolkit',
-      'NodeJS',
-      'Express',
-      'MongoDB'
+      
+      'HTML & CSS',
+      'Vanilla JS',
+      'JSON API',
+      
     ],
-    projectImage: require('../images/tipcalc.jpg')
+    projectImage: require('../images/googleapi.jpg'),
+    urlLink: function () { 
+        const url = (event) => window.open('https://olalemi.github.io/JD-induction--test/')
+       return url
+       
+     },
+     githubLink: function () { 
+      const url = (event) => window.open('https://github.com/olalemi/JD-induction--test' )
+     return url
+     
+   }
+
   },
 
   {
     id: 1,
-    projectName: 'Tip calculatore App',
+    projectName: 'Robo Friends App',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
+      'A simple react project that fetches the list of robots and  their descripton from an array and populates it on a single web page.',
     techUsed: [
-      'React',
-      'Typescript',
-      'Material-UI',
-      'Redux-Toolkit',
-      'NodeJS',
-      'Express',
-      'MongoDB'
+      'React.js',
+      'Tachyons',
+      
+     
     ],
-    projectImage: require('../images/googleapi.jpg')
+    projectImage: require('../images/tipcalc.jpg'),
+    urlLink: function onClick() { 
+      const url = (event) => window.open('https://google.com' )
+      return url
+    },
+    githubLink: function () { 
+      const url = (event) => window.open('https://github.com/olalemi/Robo-friends' )
+     return url
+     
+   }
   },
+
   {
     id: 2,
-    projectName: 'Leanne Graham',
+    projectName: 'Tip calculator App ',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur',
+      'A simple frontend app that calculates the Tip amount  of a user after a meal. It takes i the value of the bill, Number of people amd Tip percentage and returns the Total Bill and Tip amount',
     techUsed: [
-      'React',
-      'Typescript',
-      'Material-UI',
-      'Redux-Toolkit',
-      'NodeJS',
-      'Express',
-      'MongoDB'
+      
+      'Vanilla JS',
+      'ES6',
+      'SCSS/SASS',
+      
     ],
-    projectImage: require('../images/tipcalc.jpg')
+    projectImage: require('../images/tipcalc.jpg'),
+    urlLink: function onClick() { 
+      const url = (event) => window.open('https://olalemi.github.io/tip-calculator-app-main/' )
+      return url
+    },
+    githubLink: function () { 
+      const url = (event) => window.open('https://github.com/olalemi/tip-calculator-app-main' )
+     return url
+     
+   }
   }
-
 ];
 
 export default sectionList;

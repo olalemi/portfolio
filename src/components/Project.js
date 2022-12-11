@@ -13,7 +13,12 @@ const Project = () => {
               description={sl.description}
               image={sl.projectImage}
               techUsed={sl.techUsed}
+              urlLink={sl.urlLink()}
+              githubLink={sl.githubLink()}
+
+              
             />
+            
           </div>
         ))}
       </div>
