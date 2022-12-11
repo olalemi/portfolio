@@ -38,7 +38,7 @@ const sectionList = [
       
      
     ],
-    projectImage: require('../images/tipcalc.jpg'),
+    projectImage: require('../robo.jpg'),
     urlLink: function onClick() { 
       const url = (event) => window.open('https://google.com' )
       return url
