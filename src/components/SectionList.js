@@ -31,14 +31,14 @@ const sectionList = [
     id: 1,
     projectName: 'Robo Friends App',
     description:
-      'A simple react project that fetches the list of robots and  their descripton from an array and populates it on a single web page.',
+      'A simple react project that fetches the list of robots and  their descripton from an API and populates it on a single web page.',
     techUsed: [
       'React.js',
       'Tachyons',
       
      
     ],
-    projectImage: require('../robo.jpg'),
+    projectImage: require('../images/robo.jpg'),
     urlLink: function onClick() { 
       const url = (event) => window.open('https://google.com' )
       return url
