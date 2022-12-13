@@ -12,7 +12,7 @@ function Contact () {
         GET IN TOUCH
       </h1>
       <div>
-        <form name ="contact1" action="POST" data-netlify="true" onSubmit="submit "className="  justify-center  sm:mt-8 lg:mt-16 ">
+        <form name ="contact" action="POST" data-netlify="true" className="  justify-center  sm:mt-8 lg:mt-16 ">
         <input type="hidden" name="form-name" value="contact" />
           <h1 className=" mt-1 text-xl lg:text-2xl ">
             If you’d like to chat about a project or just have question, please
