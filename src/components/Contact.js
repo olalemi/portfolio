@@ -1,6 +1,16 @@
 import React from 'react';
 
 
+
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+
+
+
 function Contact () {
 
   return (
@@ -12,7 +22,7 @@ function Contact () {
         GET IN TOUCH
       </h1>
       <div>
-        <form name="contact" method="post" netlify netlify-honeypot="bot-field"  className="  justify-center  sm:mt-8 lg:mt-16 ">
+        <form method="post"   className="  justify-center  sm:mt-8 lg:mt-16 ">
         <input type="hidden" name="form-name" value="contact" />
           <h1 className=" mt-1 text-xl lg:text-2xl ">
             If you’d like to chat about a project or just have question, please
