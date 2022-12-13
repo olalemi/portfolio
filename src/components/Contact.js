@@ -1,6 +1,40 @@
 import React from 'react';
 
-function Contact() {
+
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
+}
+
+
+
+function Contact () {
+
   return (
     <div className="sm:mt-8 lg:mt-16 ">
       <h1
@@ -10,18 +44,19 @@ function Contact() {
         GET IN TOUCH
       </h1>
       <div>
-        <form data-netlify="true" className="  justify-center  sm:mt-8 lg:mt-16 ">
+        <form name ="contact" method="POST" data-netlify="true" onSubmit="submit "className="  justify-center  sm:mt-8 lg:mt-16 ">
+        <input type="hidden" name="form-name" value="contact" />
           <h1 className=" mt-1 text-xl lg:text-2xl ">
             If you’d like to chat about a project or just have question, please
             fill in the form below. I aim to get back within 24hrs.
           </h1>
-          <label for="lname"></label>
+          <label for="name"></label>
           <br />
           <input
             required
             type="text"
-            id="fname"
-            name="fname"
+            id="name"
+            name="name"
             placeholder="Name"
           />
           <br />
@@ -48,7 +83,7 @@ function Contact() {
           <label for="Message"></label>
           <br />
           <textarea
-            type="textarea"
+            type="text"
             rows="5"
             id="message"
             name="message"
