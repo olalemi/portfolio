@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import HomeText from './components/HomeText';
 import Contact from './components/Contact';
 import Project from './components/Project';
+import Footer from 'components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       <div className="sm:mt-8 lg:mt-16">
         <Contact />
       </div>
+      
+      
+      
     </div>
   );
 }

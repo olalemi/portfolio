@@ -5,6 +5,7 @@ import React from 'react';
 
 
 
+
 function Contact () {
 
   return (
@@ -65,6 +66,8 @@ function Contact () {
           <input type="submit" value="Send Message" ></input>
         </form>
         </div>
+
+        
 
      
     </div>
