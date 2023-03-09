@@ -10,7 +10,7 @@ function HomeText() {
 
         <p className="mt-9 sm:text-sm md:text-xl lg:text-2xl text-justify">
           {' '}
-          I am a Frontend Developer, resident in West Yorkshire, UK. In my spare
+          I am a Frontend Developer, resident in London, UK. In my spare
           time I like reviewing codes and building my own projects. Feel
           free to contact me for collaborations and job opportunities. Would
           love to hear you.
