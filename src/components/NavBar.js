@@ -1,18 +1,20 @@
-import * as React from 'react';
-// import { Document, Page } from 'react-pdf';
+import  {Fragment} from 'react';
+
 import Resume from '../Resume.pdf';
 import photo from '../photo.JPG';
-// import {Toolbar, Typography} from '@mui/material';
+
 import { Link } from 'react-scroll';
 
 function NavBar() {
   return (
-    <div className=" flex flex-col  md:flex-row gap-x-8">
+    <Fragment className=" flex flex-col  md:flex-row gap-x-8">
       <img
         className=" sm:w-28 md:w-40 shrink-0 sm:rounded-full "
         src={photo}
         alt="myphoto"
       />
+
+   <photo/>
 
       <div className="flex flex-col sm:gap-y-6 md:gap-y-12 sm:mt-4">
         <div>
@@ -58,7 +60,7 @@ function NavBar() {
           </ul>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 
