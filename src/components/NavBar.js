@@ -7,14 +7,14 @@ import { Link } from 'react-scroll';
 
 function NavBar() {
   return (
-    <Fragment className=" flex flex-col  md:flex-row gap-x-8">
+    <div className=" flex flex-col  md:flex-row gap-x-8">
       <img
         className=" sm:w-28 md:w-40 shrink-0 sm:rounded-full "
         src={photo}
         alt="myphoto"
       />
 
-   <photo/>
+ 
 
       <div className="flex flex-col sm:gap-y-6 md:gap-y-12 sm:mt-4">
         <div>
@@ -60,7 +60,7 @@ function NavBar() {
           </ul>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }
 
