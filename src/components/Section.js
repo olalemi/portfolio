@@ -1,5 +1,4 @@
 import React from 'react';
-// import Button from "@mui/material/Button";
 import { OpenInNew, GitHub } from '@mui/icons-material';
 import sectionList from './SectionList';
 
