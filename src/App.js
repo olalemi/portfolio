@@ -4,6 +4,8 @@ import HomeText from './components/HomeText';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import Footer from 'components/Footer';
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+
 
 function App() {
   return (
