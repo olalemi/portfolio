@@ -3,76 +3,90 @@ import { click } from '@testing-library/user-event/dist/click';
 const sectionList = [
   {
     id: 0,
-    projectName: 'Goggle Bookstore API',
+    projectName: 'ProShop',
     description:
       'A Front End task required to build  a smile listing page for HTML 5 books using Google Books API. The approach was to attempt a mobile first design to achieve mobile and desktop design in a single style sheet. Each book in the list should display the book cover, title, subtitle, all authors, number of pages and description.',
-    techUsed: [
-      
-      'HTML & CSS',
-      'Vanilla JS',
-      'JSON API',
-      
-    ],
-    projectImage: require('../images/googleapi.jpg'),
-    urlLink: function () { 
-        const url = (event) => window.open('https://olalemi.github.io/JD-induction--test/')
-       return url
-       
-     },
-     githubLink: function () { 
-      const url = (event) => window.open('https://github.com/olalemi/JD-induction--test' )
-     return url
-     
-   }
-
+    techUsed: ['HTML & CSS', 'Vanilla JS', 'JSON API'],
+    projectImage: require('../assets/images/proshop.jpg'),
+    urlLink: function () {
+      const url = (event) =>
+        window.open('https://github.com/olalemi/proshop');
+      return url;
+    },
+    githubLink: function () {
+      const url = (event) =>
+        window.open('https://github.com/olalemi/proshop');
+      return url;
+    },
   },
 
   {
     id: 1,
-    projectName: 'Robo Friends App',
+    projectName: 'Fintech Web App ',
     description:
-      'A simple react project that fetches the list of robots and  their descripton from an API and populates it on a single web page.',
-    techUsed: [
-      'React.js',
-      'Tachyons',
-      
-     
-    ],
-    projectImage: require('../images/robo.jpg'),
-    urlLink: function onClick() { 
-      const url = (event) => window.open('https://google.com' )
-      return url
+      'A fintech web app for a company that provides complete infrastructure and tools needed for African businesses to build, embed and launch financial products',
+    techUsed: ['React.js', 'ES6', 'TypeSript', 'Express Js', 'SASS'],
+    projectImage: require('../assets/images/anchor.jpg'),
+    urlLink: function onClick() {
+      const url = (event) => window.open('https://getanchor.co');
+      return url;
     },
-    githubLink: function () { 
-      const url = (event) => window.open('https://github.com/olalemi/Robo-friends' )
-     return url
-     
-   }
+    githubLink: function () {
+      const url = (event) => window.open('https://github.com/olalemi');
+      return url;
+    },
   },
 
   {
     id: 2,
-    projectName: 'Tip calculator App ',
+    projectName: 'Muzz',
     description:
-      'A simple frontend app that calculates the Tip amount  of a user after a meal. It takes the value of the bill, Number of people amd Tip percentage and returns the Total Bill and Tip amount',
+      ' A Fullstack web application implemenation of muzz web chat,client side implemented with React.js , socket.io library was used for the bi-directional communication between client and server  .',
     techUsed: [
-      
-      'Vanilla JS',
+      'React.js',
+      'TypeSript',
       'ES6',
-      'SCSS/SASS',
-      
+      'Node.js',
+      'Express Js',
+      'Socket.IO',
+      'Chakra UI',
     ],
-    projectImage: require('../images/tipcalc.jpg'),
-    urlLink: function onClick() { 
-      const url = (event) => window.open('https://olalemi.github.io/tip-calculator-app-main/' )
-      return url
+    projectImage: require('../assets/images/muzz.jpg'),
+    urlLink: function onClick() {
+      const url = (event) => window.open('https://mymuzzchatapp.netlify.app/');
+      return url;
     },
-    githubLink: function () { 
-      const url = (event) => window.open('https://github.com/olalemi/tip-calculator-app-main' )
-     return url
-     
-   }
-  }
+    githubLink: function () {
+      const url = (event) =>
+        window.open('https://github.com/olalemi/muzzfrontend');
+      return url;
+    },
+  },
+
+  {
+    id: 3,
+    projectName: 'AnyWork',
+    description:
+      'A comprehensive full-stack campaign website for a startup, designed to collect email addresses from potential users. The client-side is developed using React.js. .',
+    techUsed: [
+      'React.js',
+      'TypeSript',
+      'ES6',
+      'Node.js',
+      'Express Js',
+      'Chakra UI',
+    ],
+    projectImage: require('../assets/images/anywork.jpg'),
+    urlLink: function onClick() {
+      const url = (event) => window.open('https://useanywork.netlify.app/');
+      return url;
+    },
+    githubLink: function () {
+      const url = (event) =>
+        window.open('https://github.com/olalemi');
+      return url;
+    },
+  },
 ];
 
 export default sectionList;

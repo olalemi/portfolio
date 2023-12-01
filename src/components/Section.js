@@ -2,7 +2,14 @@ import React from 'react';
 import { OpenInNew, GitHub } from '@mui/icons-material';
 import sectionList from './SectionList';
 
-const Section = ({ projectName, image, description, techUsed , githubLink, urlLink}) => {
+const Section = ({
+  projectName,
+  image,
+  description,
+  techUsed,
+  githubLink,
+  urlLink,
+}) => {
   return (
     <div>
       <div className=" sm:mt-2 md:mt-8 flex  sm:mb-8 md:mb-0 justify-around flex-col   md:flex-row gap-x-8 text-sm text-blue-800">
@@ -24,14 +31,12 @@ const Section = ({ projectName, image, description, techUsed , githubLink, urlLi
               className="cursor-pointer transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105"
               fontSize="medium"
               onClick={urlLink}
-              
               color="primary"
             />
             <GitHub
               className="cursor-pointer transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105"
               fontSize="medium"
               onClick={githubLink}
-           
               color="primary"
             />
           </div>

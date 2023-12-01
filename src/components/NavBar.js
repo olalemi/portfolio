@@ -1,4 +1,4 @@
-import  {Fragment} from 'react';
+import { Fragment } from 'react';
 
 import Resume from '../Resume.pdf';
 import photo from '../photo.JPG';
@@ -13,8 +13,6 @@ function NavBar() {
         src={photo}
         alt="myphoto"
       />
-
- 
 
       <div className="flex flex-col sm:gap-y-6 md:gap-y-12 sm:mt-4">
         <div>

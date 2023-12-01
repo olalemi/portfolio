@@ -15,10 +15,7 @@ const Project = () => {
               techUsed={sl.techUsed}
               urlLink={sl.urlLink()}
               githubLink={sl.githubLink()}
-
-              
             />
-            
           </div>
         ))}
       </div>

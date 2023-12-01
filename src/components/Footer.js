@@ -3,7 +3,6 @@ import { LinkedIn, GitHub, Twitter } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import { Fragment } from 'react';
 
-
 const Footer = () => {
   return (
     <Fragment>

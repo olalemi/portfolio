@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
-@tailwind base;
+ @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Rubik', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Rubik', 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,33 +17,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Rubik', sans-serif;
 }
 
-form{
+form {
   max-width: 500px;
   margin: 0 auto;
- 
+}
 
-} 
-
-input[type="text"], input[type="email"] , textarea{
-  border:rgb(59 130 246 / 0.5) solid 1.5px;
+input[type='text'],
+input[type='email'],
+textarea {
+  border: rgb(59 130 246 / 0.5) solid 1.5px;
   border-radius: 10px;
   padding: 5px;
   width: 100%;
 }
 
-input[type="submit"]{
-  border:rgb(59 130 246 / 0.5) solid 1.5px;
+input[type='submit'] {
+  border: rgb(59 130 246 / 0.5) solid 1.5px;
   border-radius: 10px;
   padding: 5px;
   margin-top: 10px;
-  width:40%;
+  width: 40%;
   height: 45px;
   font-weight: bold;
-  color:white;
+  color: white;
   background: rgb(76, 92, 181);
   cursor: pointer;
-  
- 
 }
-
-
