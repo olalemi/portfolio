@@ -5,17 +5,24 @@ const sectionList = [
     id: 0,
     projectName: 'ProShop',
     description:
-      'A Front End task required to build  a smile listing page for HTML 5 books using Google Books API. The approach was to attempt a mobile first design to achieve mobile and desktop design in a single style sheet. Each book in the list should display the book cover, title, subtitle, all authors, number of pages and description.',
-    techUsed: ['HTML & CSS', 'Vanilla JS', 'JSON API'],
+      'A MERN stack e-commerce project built from ground up with React, Redux Toolkit, Express & MongoDB , and  PayPal / credit card integration as payment system',
+    techUsed: [
+      'React.js',
+      'ES6',
+      'JavaScript',
+      'Express Js',
+      'Redux Toolkit',
+      'MongoDB',
+      'Paypal API',
+    ],
+
     projectImage: require('../assets/images/proshop.jpg'),
     urlLink: function () {
-      const url = (event) =>
-        window.open('https://github.com/olalemi/proshop');
+      const url = (event) => window.open('https://github.com/olalemi/proshop');
       return url;
     },
     githubLink: function () {
-      const url = (event) =>
-        window.open('https://github.com/olalemi/proshop');
+      const url = (event) => window.open('https://github.com/olalemi/proshop');
       return url;
     },
   },
@@ -46,6 +53,7 @@ const sectionList = [
       'React.js',
       'TypeSript',
       'ES6',
+      'MongoDB',
       'Node.js',
       'Express Js',
       'Socket.IO',
@@ -73,6 +81,7 @@ const sectionList = [
       'TypeSript',
       'ES6',
       'Node.js',
+      'MongoDB',
       'Express Js',
       'Chakra UI',
     ],
@@ -82,8 +91,7 @@ const sectionList = [
       return url;
     },
     githubLink: function () {
-      const url = (event) =>
-        window.open('https://github.com/olalemi');
+      const url = (event) => window.open('https://github.com/olalemi');
       return url;
     },
   },
