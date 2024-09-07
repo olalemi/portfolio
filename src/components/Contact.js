@@ -26,7 +26,7 @@ function Contact() {
       message: '',
     },
     validationSchema: validationSchema,
-    onSubmit: ({ setSubmitting, resetForm }) => {
+    onSubmit: (_values,{ setSubmitting, resetForm }) => {
       emailjs
         .sendForm('service_ddc6gg8', 'template_7x3q6qy', form.current, 'Vcqt9muB5wjibvT34')
         .then((response) => {
