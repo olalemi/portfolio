@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 import 'react-toastify/dist/ReactToastify.css';
 
 const validationSchema = Yup.object().shape({
@@ -13,12 +14,9 @@ const validationSchema = Yup.object().shape({
   message: Yup.string().required('Message is required'),
 });
 
+
 function Contact() {
-  const notify = () => {
-    toast.success('Message sent', {
-      position: toast.POSITION.BOTTOM_CENTER,
-    });
-  };
+  const form = useRef();
 
   const formik = useFormik({
     initialValues: {
@@ -28,31 +26,24 @@ function Contact() {
       message: '',
     },
     validationSchema: validationSchema,
-    onSubmit: (values, { setSubmitting,resetForm }) => {
-      const formData = new FormData();
-      formData.append('name', values.name);
-      formData.append('email', values.email);
-      formData.append('subject', values.subject);
-      formData.append('message', values.message);
-
-      fetch('https://getform.io/f/288c4385-36c0-495a-b55e-928f92f6133d', {
-        method: 'POST',
-        body: formData,
-      })
+    onSubmit: ({ setSubmitting, resetForm }) => {
+      emailjs
+        .sendForm('service_ddc6gg8', 'template_7x3q6qy', form.current, 'Vcqt9muB5wjibvT34')
         .then((response) => {
-          if (response.ok) {
-            toast.success('Message sent successfully');
-            console.log('Message sent successfully');
-            resetForm();
-          } else {
-            console.log('Submission error', response);
-            toast.error('Failed to send message');
-          }
+          toast.success('Message sent successfully', {
+            position: toast.POSITION.BOTTOM_CENTER,
+          });
+          console.log('Message sent successfully:', response);
+          resetForm(); // Reset form fields after submission
         })
-        .catch((error) => console.error('Error:', error));
-      setSubmitting(false);
+        .catch((error) => {
+          console.log('Failed to send message:', error);
+          toast.error('Failed to send message');
+        })
+        .finally(() => setSubmitting(false));
     },
   });
+
 
   return (
     <div className="sm:mt-8 lg:mt-16 ">
@@ -69,6 +60,7 @@ function Contact() {
       <div>
         <form
           onSubmit={formik.handleSubmit}
+          ref={form}
           className="  justify-center  sm:mt-8 lg:mt-16 "
         >
           <h1 className=" mt-1 text-xl lg:text-2xl ">
