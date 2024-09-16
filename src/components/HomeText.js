@@ -10,7 +10,7 @@ function HomeText() {
 
         <p className="mt-9 sm:text-sm md:text-xl lg:text-2xl text-justify">
           {' '}
-          I am a Full-stack Developer, resident in the United Kingdom. In my spare time I
+          I am a Full-Stack Developer, resident in London, UK. In my spare time I
           like reviewing codes and building my own projects. Feel free to
           contact me for collaborations and job opportunities. Would love to
           hear from you.
@@ -18,7 +18,7 @@ function HomeText() {
 
         <p className=" mt-9 sm:text-sm md:text-xl lg:text-2xl">
           {' '}
-          I write HTML & CSS | Javascript | Typescript | React.Js | Node.Js
+          I write HTML & CSS | Javascript | Typescript | React.Js | Node.Js | Python | C#
         </p>
       </div>
     </div>

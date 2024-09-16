@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import Resume from '../Resume.pdf';
+import Resume from '../resume.pdf';
 import photo from '../photo.JPG';
 
 import { Link } from 'react-scroll';

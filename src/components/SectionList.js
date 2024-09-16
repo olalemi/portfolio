@@ -95,6 +95,52 @@ const sectionList = [
       return url;
     },
   },
+  {
+    id: 4,
+    projectName: 'Gazetteer',
+    description:
+      'The task was to respond to a website specification for a map-based application that provides country-related information, with an emphasis on "mobile-first" development. The preferred approach involves using a framework to develop HTML, CSS, and JavaScript, incorporating JQuery modules that interact with PHP server-side components to retrieve data from third-party APIs like Geonames and OpenWeather.',
+    techUsed: [
+      'HTML/CSS',
+      'JavaScript',
+      'JQuery',
+      "Bootstrap",
+      'AJAX',
+      "SQL",
+      'PHP',
+    ],
+    projectImage: require('../assets/images/gazetteer.png'),
+    urlLink: function onClick() {
+      const url = (event) => window.open('http://gazetteer.free.nf/');
+      return url;
+    },
+    githubLink: function () {
+      const url = (event) => window.open('https://github.com/olalemi/nurudeenOlalemi/tree/main/project1');
+      return url;
+    },
+  },
+  {
+    id: 5,
+    projectName: 'Company Directory',
+    description:
+      'This application is designed as a "mobile-first" website, ensuring seamless functionality across both mobile devices and desktop computers. It will provide access to a database, enabling users to modify the data by adding, editing, or deleting entries. Additionally, the application will offer search capabilities within the database, allowing users to apply filters and use a search bar for more efficient queries',
+    techUsed: [
+      'HTML/CSS',
+      'JavaScript',
+      'JQuery',
+      'AJAX',
+      'PHP',
+    ],
+    projectImage: require('../assets/images/company_directory.png'),
+    urlLink: function onClick() {
+      const url = (event) => window.open('http://company-directory.free.nf/?i=1');
+      return url;
+    },
+    githubLink: function () {
+      const url = (event) => window.open('https://github.com/olalemi/nurudeenOlalemi/tree/main/project2');
+      return url;
+    },
+  },
 ];
 
 export default sectionList;
