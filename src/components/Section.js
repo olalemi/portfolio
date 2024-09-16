@@ -43,9 +43,9 @@ const Section = ({
 
           <div className="flex flex-row flex-wrap gap-x-2 mt-6 justify-center ">
             {techUsed.map((sltu, i) => (
-              <div>
+              <div  key={i}>
                 <button
-                  key={i}
+                 
                   className="gap-x-2 mt-6 border-solid border-2 transition ease-in-out delay-75  hover:-translate-y-1 hover:scale-105 bg-blue-800 text-white p-2 rounded-md"
                   type="button "
                 >

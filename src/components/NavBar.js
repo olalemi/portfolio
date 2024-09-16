@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
-import Resume from '../resume.pdf';
-import photo from '../photo.JPG';
+import Resume from '../assets/files/resume.pdf';
+import photo from '../assets/images/photo.jpg';
 
 import { Link } from 'react-scroll';
 
@@ -35,18 +35,12 @@ function NavBar() {
               </Link>
             </li>
             <li className="hover:text-yellow-900">
-              <a
-                href={Resume}
-                without
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href={Resume} rel="noopener noreferrer" target="_blank">
                 RESUME
               </a>
             </li>
             <li className="hover:text-yellow-900">
-              <Link
-                to="contact"
+              <Link                to="contact"
                 spy={true}
                 smooth={true}
                 offset={70}
